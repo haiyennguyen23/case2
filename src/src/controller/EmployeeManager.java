@@ -1,7 +1,6 @@
 package controller;
 
 import model.Employee;
-import model.FulltimeEmployee;
 import model.PartimeEmployee;
 import storage.EmployeeFile;
 
@@ -21,7 +20,7 @@ public class EmployeeManager {
         float average = sum/employees.size();
         return average;
     }
-    //    2. Lay danh sach nhan vien luong thap hon luong tb
+    //   Lay danh sach nhan vien luong thap hon luong tb
     public ArrayList<Employee> getParttimeUnderSalary(){
         ArrayList<Employee> employeeArrayList = new ArrayList<>();
         float average = getAverageSalary();
@@ -33,10 +32,11 @@ public class EmployeeManager {
         return employeeArrayList;
     }
 
-    //    3. Them moi nhan vien fulltime
+    //    Them moi nhan vien fulltime
     public void addNewEmployee(Employee employee){
         employees.add(employee);
         EmployeeFile.writeFile(employees);
+
     }
-    // 4. Kiểm tra xem danh sách nhân viên có rỗng hy không
+
 }
