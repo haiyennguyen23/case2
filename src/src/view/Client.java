@@ -5,11 +5,10 @@ import model.Employee;
 import model.FulltimeEmployee;
 import model.PartimeEmployee;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Client {
+public class Client  {
     private static List<Employee> employees = EmployeeManager.employees;
     static {
         FulltimeEmployee b1 = new FulltimeEmployee(100, 0, 10000);
@@ -49,11 +48,11 @@ public class Client {
     public static Employee newE(){
         FulltimeEmployee newE = new FulltimeEmployee();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhap ten");
+        System.out.println("Nhập tên: ");
         String name = scanner.nextLine();
         newE.setFullName(name);
         Scanner scanner1 = new Scanner(System.in);
-        System.out.println("Nhap email");
+        System.out.println("Nhập email:");
         String email = scanner.nextLine();
         newE.setEmail(email);
         return newE;
