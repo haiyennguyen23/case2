@@ -38,4 +38,5 @@ public class EmployeeManager {
         employees.add(employee);
         EmployeeFile.writeFile(employees);
     }
+    // 4. Kiểm tra xem danh sách nhân viên có rỗng hy không
 }

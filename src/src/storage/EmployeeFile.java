@@ -47,9 +47,9 @@ public class EmployeeFile implements Serializable {
 
     public static void main(String[] args) throws IOException {
                 FulltimeEmployee b1 = new FulltimeEmployee(100, 0, 10000);
-        FulltimeEmployee b2 = new FulltimeEmployee(10, 50, 20000);
-//        ParttimeEmployee b3 = new ParttimeEmployee(3.4f);
-//        ParttimeEmployee b4 = new ParttimeEmployee(10.0f);
+                FulltimeEmployee b2 = new FulltimeEmployee(10, 50, 20000);
+//                PartimeEmployee b3 = new PartimeEmployee(3.4f);
+//                PartimeEmployee b4 = new PartimeEmployee(10.0f);
         List<Employee> employees = new ArrayList<>();
         employees.add(b1);
         employees.add(b2);
