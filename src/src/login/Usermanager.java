@@ -5,26 +5,26 @@ import java.util.regex.Pattern;
 
 public class Usermanager {
     User user = new User();
-    public void dangKy(String tk, String mk) {
-        user.setTaiKhoan(tk);
-        user.setMatKhau(mk);
+    public void Register(String account, String passwork) {
+        user.setAccount(account);
+        user.setPassword(passwork);
 
     }
 
-    public User dangNhap(String tk, String mk){
-        if (user.getTaiKhoan().equals(tk) && user.getMatKhau().equals(mk)) {
+    public User Login(String account, String passwork){
+        if (user.getAccount().equals(account) && user.getPassword().equals(passwork)) {
             return user;
         } else {
             return null;
         }
 
     }
-    public boolean validateTk(String regex) {
+    public boolean validateAccount(String regex) {
         Pattern pattern = Pattern.compile("^[a-zA-Z0-9]{1,6}$");
         Matcher matcher = pattern.matcher(regex);
         return matcher.matches();
     }
-    public boolean validateMk(String regex) {
+    public boolean validatePassWork(String regex) {
         Pattern pattern = Pattern.compile("^[a-zA-Z0-9]{1,6}$");
         Matcher matcher = pattern.matcher(regex);
         return matcher.matches();

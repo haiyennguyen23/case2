@@ -28,7 +28,7 @@ public class Main {
                         Boolean tkLogin = usermanager.validateTk(tk);
                         Boolean mkLogin = usermanager.validateMk(mk);
                         if (tkLogin == true && mkLogin == true) {
-                            usermanager.dangKy(tk, mk);
+                            usermanager.Register(tk, mk);
                             System.out.println("Chúc mừng Bạn đã đăng kí thành công");
                         } else {
                             System.out.println("Nhập không đúng định dạng");

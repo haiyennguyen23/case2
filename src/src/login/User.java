@@ -1,30 +1,30 @@
 package login;
 
 public class User {
-    private String taiKhoan;
-    private String matKhau;
+    private String Account;
+    private String Password;
 
     public User() {
     }
 
-    public User(String taiKhoan, String matKhau) {
-        this.taiKhoan = taiKhoan;
-        this.matKhau = matKhau;
+    public User(String Account, String Password) {
+        this.Account = Account;
+        this.Password = Password;
     }
 
-    public String getTaiKhoan() {
-        return taiKhoan;
+    public String getAccount() {
+        return Account;
     }
 
-    public void setTaiKhoan(String taiKhoan) {
-        this.taiKhoan = taiKhoan;
+    public void setAccount(String account) {
+        this.Account = account;
     }
 
-    public String getMatKhau() {
-        return matKhau;
+    public String getPassword() {
+        return Password;
     }
 
-    public void setMatKhau(String matKhau) {
-        this.matKhau = matKhau;
+    public void setPassword(String password) {
+        this.Password = password;
     }
 }
