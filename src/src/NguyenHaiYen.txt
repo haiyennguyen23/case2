@@ -1,0 +1,10 @@
+1. Nhân viên fulltime
+- Tên: Nguyễn Thuỳ Ngân, giới tính: Nữ, tuổi:22, trạng thái làm việc:Đang làm, ngày làm việc:26, thâm niên:2.
+- Tên: Nguyễn Ngọc Thảo, giới tính:Nữ , tuổi21: , trạng thái làm việc:Đang làm , ngày làm việc: 25 , thâm niên:1.
+- Tên: Bùi Anh Quân, giới tính:Nam , tuổi:  20, trạng thái làm việc: Nghỉ phép, ngày làm việc: 24, thâm niên:0.
+- Tên: Lê Phúc Lâm, giới tính: Nam, tuổi: 26, trạng thái làm việc: Đang làm, ngày làm việc: 25, thâm niên:2.
+- Tên: Trần Hoàng Dương, giới tính: Nam, tuổi: 27, trạng thái làm việc: Đang làm, ngày làm việc: 22, thâm niên: 1.5.
+2. Nhân viên partime
+-  Tên: Trần Ngọc Ánh Thư, giới tính: Nữ, tuổi: 22, trạng thái làm việc: Nghỉ phép, ngày làm việc: 25, tiền phạt: 100.
+- Tên: Nguyễn Thuỳ Chi, giới tính: Nữ, tuổi: 20, trạng thái làm việc: Đang làm, ngày làm việc: 15, tiền phạt: 0.
+- Tên: Bùi Tuấn Khang, giới tính: Nam, tuổi: 21, trạng thái làm việc: Đang làm, ngày làm việc: 28, tiền phạt: 120.
