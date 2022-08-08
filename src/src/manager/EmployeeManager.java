@@ -308,4 +308,17 @@ public class EmployeeManager {
         }
     }
 
+    public void addFulltimeEmployee() {
+
+
+    }
+
+    public void addPartimeEmployee() {
+
+
+    }
+
+    public void deleteEmployee(List<Employee> arr, String name4) {
+
+    }
 }

@@ -17,7 +17,7 @@ public class Main {
      static EmployeeManager employeeManager = new EmployeeManager();
 
     public static List<User> userList = new ArrayList<>();
-    static Employee object = new Employee() {
+    static Employee employee = new Employee() {
         @Override
         public float totalSalary() {
             return 0;
@@ -175,13 +175,17 @@ public class Main {
                         employeeManager.sumTotalSalary(arr);
                         break;
                     case 3:
-                        object.addFulltimeEmployee();
+                        employeeManager.addFulltimeEmployee();
+                        for (int i = 0; i < arr.size(); i++) {
+                            System.out.println(arr.get(i));
+                        }
+                        employeeManager.addPartimeEmployee();
                         for (int i = 0; i < arr.size(); i++) {
                             System.out.println(arr.get(i));
                         }
                         break;
                     case 4:
-                        object.addPartimeEmployee();
+                        employeeManager.addPartimeEmployee();
                         for (int i = 0; i < arr.size(); i++) {
                             System.out.println(arr.get(i));
                         }
@@ -189,17 +193,17 @@ public class Main {
                     case 5:
                         System.out.println("Mời bạn nhập tên nhân viên muốn tìm");
                         String name = scanner1.nextLine();
-                        object.search(arr, name);
+                        employeeManager.search(arr, name);
                         break;
                     case 6:
                         System.out.println("Mời bạn nhập tên nhân viên muốn kiểm tra trạng thái: ");
                         String name1 = scanner1.nextLine();
-                        object.statusDisplay(arr, name1);
+                        employeeManager.statusDisplay(arr, name1);
                         break;
                     case 7:
                         System.out.println("Mời bạn nhập tên nhân viên muốn thay đổi trạng thái: ");
                         String name2 = scanner1.nextLine();
-                        object.changeStatus(arr, name2);
+                        employeeManager.changeStatus(arr, name2);
 //                    hiểm thị lại nhân viên đó
                         for (int i = 0; i < arr.size(); i++) {
                             if (arr.get(i).getName().equals(name2)) {
@@ -210,7 +214,7 @@ public class Main {
                     case 8:
                         System.out.println("Mời bạn nhập tên nhân viên muốn sửa: ");
                         String name3 = scanner1.nextLine();
-                        object.editInformation(arr, name3);
+                        employeeManager.editInformation(arr, name3);
                         List<String> abc = new ArrayList<>();
                         for (int i = 0; i < arr.size(); i++) {
                             abc.add((String) arr.get(i).getName());
@@ -228,7 +232,7 @@ public class Main {
                     case 9:
                         System.out.println("Mời bạn nhập tên nhân viên muốn đuổi việc: ");
                         String name4 = scanner1.nextLine();
-                        object.deleteEmployee(arr, name4);
+                        employeeManager.deleteEmployee(arr, name4);
                         for (int i = 0; i < arr.size(); i++) {
                             System.out.println(arr.get(i));
                         }
